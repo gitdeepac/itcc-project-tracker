@@ -76,6 +76,7 @@ npm run dev
 
 ## 8. What's Not Done, What's Rough, What's Next
 
+**Not done**
 - Frontend runs locally but is not deployed to cPanel
 - No member self-registration — users are seeded only
 - No automated scheduled reminders — the overdue check is triggered manually
