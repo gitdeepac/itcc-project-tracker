@@ -17,3 +17,8 @@
 
 - return "ok" instead of proper response string.
 
+
+## Note
+some of the issues in the snippet were not picked up? 
+
+Based on the code snippet provided, I have identified the issues listed above.
