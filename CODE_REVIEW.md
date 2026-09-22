@@ -21,4 +21,4 @@
 ## Note
 some of the issues in the snippet were not picked up? 
 
-Based on the code snippet provided, I have identified the issues listed above.
+Based on the code snippet provided, I have identified the issues listed above and could not able to find any further issues.
