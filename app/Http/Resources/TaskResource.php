@@ -22,7 +22,6 @@ class TaskResource extends JsonResource
             'estimate_hours' => $this->estimate_hours,
             'status'         => $this->status,
             'due_date'       => $this->due_date->format('Y-m-d'),
-            'completed_at'   => $this->completed_at?->format('Y-m-d H:i:s'),
             'created_at'     => $this->created_at->format('Y-m-d H:i:s'),
         ];
     }

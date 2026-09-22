@@ -34,7 +34,6 @@ class TaskRequest extends FormRequest
                 'date',
                 'before_or_equal:' . $deadline,
             ],
-            'completed_at'   => ['nullable', 'date'],
         ];
     }
 

@@ -23,5 +23,5 @@ Route::middleware('auth:sanctum')->group(function () {
 	Route::get('projects/{project}/summary', [ProjectController::class, 'summary']);
 
 	// Tasks (nested under projects)
-    Route::apiResource('projects.tasks', TaskController::class);
+    Route::apiResource('projects.tasks', TaskController::class)->scoped(['task' => 'id']);
 });
