@@ -6,23 +6,38 @@ For story points, we’ll use the Fibonacci scale: 1, 2, 3, 5, 8, 13.
 
 A higher number means the task has more complexity, effort, or uncertainty.
 
+Hour estimates are provided as requested. Without knowing each team member's capacity and project familiarity, actual hours may vary. These can be refine after 1st sprint iteration once clear picture of individual speed.
+
+Using this rough guide:
+1 SP = 2 hours
+3 SP = 4-6 hours
+5 SP = 8-10 hours
+8 SP = 12-16 hours
+13 SP = 20-24 hours
+
 
 **Sprint 1 (Week 1) — Foundation**
-- Excel data migration and cleanup (Ravi, 8 SP)
-- Laravel setup: auth, roles, migrations, seeders (Ravi, 5 SP)
-- Member profile, membership status, renewal logic (Ravi, 5 SP)
-- Vue setup, login, member portal UI (Aman, 8 SP)
+- Excel data migration and cleanup (Ravi, 8 SP) (12-16 h)
+- Laravel setup: auth, roles, migrations, seeders (Ravi, 5 SP) (8-10 h)
+- Member profile, membership status, renewal logic (Ravi, 5 SP) (8-10 h)
+- Vue setup, login, member portal UI (Aman, 8 SP)  (12-16 h)
+- Flutter project scaffolding and dependency setup (Sam, 5SP) (8-10 h)
+- Code review and PR feedback for Ravi and Aman (Sam, 3SP) (4-6 h)
+- Review API contracts with Ravi to prepare for Flutter integration (Sam, 3SP) (4-6 h)
 
 **Sprint 2 (Week 2) — Core Features**
-- Stripe payment and webhook (Ravi, 13 SP)
-- Invoice PDF generation and download (Priya, 8 SP)
-- Email reminders and queue (Priya, 5 SP)
-- Admin dashboard: lapsed members, reminders, CSV export (Priya, 5 SP)
-- Vue: payment flow, invoice download (Aman, 8 SP)
+- Stripe payment and webhook (Ravi, 13 SP) (20-24 h)
+- Invoice PDF generation and download (Priya, 8 SP) (12-16 h)
+- Email reminders and queue (Priya, 5 SP) (8-10 h)
+- Admin dashboard: lapsed members, reminders, CSV export (Priya, 5 SP) (8-10 h)
+- Vue: payment flow, invoice download (Aman, 8 SP) (12-16 h)
+- Testing the API endpoints that Flutter will consume (Sam, 8SP) (12-16 h)
+- Continue Review PR (Sam, 3SP) (4-6 h)
+- Navigation setup Flatter (Sam, 5SP) (8-10 h)
 
 **Sprint 3 (Week 3) — Flutter + Polish**
-- Flutter: login, profile, membership status (Sam, 13 SP)
-- Bug fixes and demo prep (Ravi + Priya, 5 SP)
+- Flutter: login, profile, membership status (Sam, 13 SP) (20-24 h)
+- Bug fixes and demo prep (Ravi + Priya, 5 SP) (8-10 h)
 - Final UI pass (Aman, 3 SP)
 
 ---
@@ -32,7 +47,7 @@ A higher number means the task has more complexity, effort, or uncertainty.
 - **Ravi** — backend lead, Stripe, data migration and API contracts
 - **Priya** — invoices, email reminders, admin features
 - **Aman** — full Vue frontend, working from Ravi’s API contracts
-- **Sam** — Flutter app, starts week 3 once API is stable
+- **Sam** — Flutter app, week 1 and 2 will be PR review and project scaffolding, starts app in week 3 once API is stable.
 
 ---
 
