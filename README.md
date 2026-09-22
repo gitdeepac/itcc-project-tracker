@@ -112,7 +112,7 @@ Completed in one session on the night of 20–21 September 2026, approximately 9
 
 ## 10. Declaration
 
-I built this project myself over the course of this assessment. All code was written by me. I used the Laravel and React documentation for reference, and standard development tools including Postman for API testing.
+I confirm that I completed this assessment myself without the use of AI coding assistants (including but not limited to Claude Code, Codex, GitHub Copilot, ChatGPT and Cursor), and that I am able to explain and modify any part of this code in an interview.
 
 **Deepak Patil**
 21 September 2026
