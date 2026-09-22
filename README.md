@@ -103,14 +103,14 @@ npm run dev
 
 Completed in one session on the night of 20–21 September 2026, approximately 9pm to 1:45am AEST.
 
-- | 1 | Project setup, migrations, models, factories, seeders
-- | 2 | Sanctum auth, controllers, routes |
-- | 3 | Form Requests, API Resources, summary endpoint |
-- | 4 | Event + Listener for auto-complete rule |
-- | 5 | Queued job for overdue project logging |
-- | 6 | Feature tests |
-- | 7 | React frontend |
-- | 8 | README, CODE_REVIEW, PLAN docs |
+- | 1 | Project setup, migrations, models, factories, seeders | - 1.20 h
+- | 2 | Sanctum auth, controllers, routes | 30 min
+- | 3 | Form Requests, API Resources, summary endpoint | - 40 min
+- | 4 | Event + Listener for auto-complete rule | - 30 min
+- | 5 | Queued job for overdue project logging | - 30 min
+- | 6 | Feature tests | - 30 min
+- | 7 | React frontend | - 30 min
+- | 8 | README, CODE_REVIEW, PLAN docs | - 40 min
 
 **Total: ~5 hours**
 
@@ -129,5 +129,7 @@ I confirm that I completed this assessment myself without the use of AI coding a
 - Updated the Readme to get better understanding when installing fresh setup as well made changes into config file to remove the local path - 30 min 
 - Added test cases for update / delete task into TaskTest.php - 35 min
 - Added new test case to check the api is returning key and value for project summary to check the ITEM 3 validation - 20 min.
+- Update CODE REVIEW - update with severity ranking - 20 min
 - Update PLAN.md - address request of changing story points to hours. - 30 min
+- Declaration re-signing - 5 min
 
