@@ -117,3 +117,11 @@ I built this project myself over the course of this assessment. All code was wri
 **Deepak Patil**
 21 September 2026
 
+
+#### - Change on 23 Sep
+
+- Updated the project name consistancy across the project so that It will show data properly. - 20 min
+- Update scoped route for task so that this can be help preventing wrong relation action. - 10 min
+- Updated the Readme to get better understanding when installing fresh setup as well made changes into config file to remove the local path - 30 min 
+- Added test cases for update / delete task into TaskTest.php
+- Added new test case to check the api is returning key and value for project summary to check the ITEM 3 validation. 

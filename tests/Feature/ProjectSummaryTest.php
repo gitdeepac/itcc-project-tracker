@@ -48,4 +48,22 @@ class ProjectSummaryTest extends TestCase
                 'is_project_overdue'    => false,
             ]);
     }
+
+	public function test_summary_returns_project_name(): void
+    {
+
+		$user    = User::factory()->create();
+        $token   = $user->createToken('test')->plainTextToken;
+        $headers = ['Authorization' => "Bearer $token"];
+
+        $project = Project::factory()->create([
+            'status'   => 'active',
+			'project_name' => "itcc-project-tracker-by-deepak",
+            'deadline' => now()->addDays(30),
+        ]);
+
+        $this->getJson('/api/projects', $headers)
+            ->assertOk()
+            ->assertJsonFragment(['name' => 'itcc-project-tracker-by-deepak']);
+    }
 }
