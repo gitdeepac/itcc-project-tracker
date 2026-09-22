@@ -96,14 +96,14 @@ npm run dev
 
 Completed in one session on the night of 20–21 September 2026, approximately 9pm to 1:45am AEST.
 
-| 1 | Project setup, migrations, models, factories, seeders |
-| 2 | Sanctum auth, controllers, routes |
-| 3 | Form Requests, API Resources, summary endpoint |
-| 4 | Event + Listener for auto-complete rule |
-| 5 | Queued job for overdue project logging |
-| 6 | Feature tests |
-| 7 | React frontend |
-| 8 | README, CODE_REVIEW, PLAN docs |
+- | 1 | Project setup, migrations, models, factories, seeders
+- | 2 | Sanctum auth, controllers, routes |
+- | 3 | Form Requests, API Resources, summary endpoint |
+- | 4 | Event + Listener for auto-complete rule |
+- | 5 | Queued job for overdue project logging |
+- | 6 | Feature tests |
+- | 7 | React frontend |
+- | 8 | README, CODE_REVIEW, PLAN docs |
 
 **Total: ~5 hours**
 
