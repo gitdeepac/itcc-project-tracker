@@ -65,6 +65,9 @@ npm install
 npm run dev
 ```
 
+> Note: The Vite proxy is configured to forward /api requests to http://127.0.0.1:8000. 
+> If your backend runs on a different port, update the target in frontend/vite.config.js.
+
 ## 7. Key Decisions
 
 - Totals are calculated directly from the database on each request. This is simple and fast enough for the current data size. If the dataset grows significantly, we can add caching later.
