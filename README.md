@@ -22,7 +22,7 @@ A Laravel 11 REST API + React frontend for managing projects and tasks, with San
 
 ### 1. Clone the repository
 
-git clone https://github.com/your-username/itcc-project-tracker.git
+git clone https://github.com/gitdeepac/itcc-project-tracker.git
 cd itcc-project-tracker
 
 ### 2. Install PHP dependencies
@@ -52,10 +52,14 @@ DB_PASSWORD=
 
 php artisan migrate:fresh --seed
 
+php artisan serve
+
 #### After this it will create this username and password
 
 Admin user: `admin@itcc.test` / `password`
 Projects and associated tasks
+
+Run the backend 
 
 ### 6. Set up the frontend
 
