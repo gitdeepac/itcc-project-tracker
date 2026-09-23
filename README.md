@@ -1,6 +1,9 @@
 # ITCC Project Tracker
 
 A Laravel 11 REST API + React frontend for managing projects and tasks, with Sanctum token auth.
+This repository contains two applications:
+- Laravel backend in the root folder
+- React frontend in the frontend/ folder
 
 ## Requirements
 
@@ -132,4 +135,12 @@ I confirm that I completed this assessment myself without the use of AI coding a
 - Update CODE REVIEW - update with severity ranking - 20 min
 - Update PLAN.md - address request of changing story points to hours. - 30 min
 - Declaration re-signing - 5 min
+
+
+#### - Change on 23 Sep - round 2
+
+- Item 1 – Project Create: Standardised the project name field across API requests, validation, responses, and tests. Updated the related test, and all tests are now passing. - 30 min.
+- Item 3 – Project Summary: Updated the summary endpoint to return the project name consistently and added a test to verify the project name across the relevant endpoints. - 25 min
+- Item 4 – Fresh Clone Setup: Fixed the Laravel and React Vite configurations, removed machine-specific paths, updated the README and Docker configuration, and verified the setup from a fresh installation. - 45 min
+- Update yaml for docker deployment - 40 min
 

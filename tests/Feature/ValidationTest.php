@@ -18,6 +18,6 @@ class ValidationTest extends TestCase
 
         $this->postJson('/api/projects', [], $headers)
             ->assertUnprocessable()
-            ->assertJsonValidationErrors(['name', 'client_name', 'deadline', 'status']);
+            ->assertJsonValidationErrors(['project_name', 'client_name', 'deadline', 'status']);
     }
 }

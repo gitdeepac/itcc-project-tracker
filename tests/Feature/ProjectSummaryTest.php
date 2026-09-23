@@ -62,8 +62,9 @@ class ProjectSummaryTest extends TestCase
             'deadline' => now()->addDays(30),
         ]);
 
-        $this->getJson('/api/projects', $headers)
+        $this->getJson("/api/projects/{$project->id}/summary", $headers)
             ->assertOk()
-            ->assertJsonFragment(['name' => 'itcc-project-tracker-by-deepak']);
+            ->assertJsonFragment(['project_name' => 'itcc-project-tracker-by-deepak'])
+			->assertJsonMissing(['name' => 'itcc-project-tracker-by-deepak']);
     }
 }

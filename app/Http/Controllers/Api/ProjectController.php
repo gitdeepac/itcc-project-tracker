@@ -69,7 +69,7 @@ class ProjectController extends Controller
 		$isProjectOverdue  = $project->deadline->isPast();
 
 		return response()->json([
-			'project'           => $project->name,
+			'project_name'      => $project->project_name,
 			'total_tasks'       => $totalTasks,
 			'done_tasks'        => $doneTasks,
 			'pending_tasks'     => $totalTasks - $doneTasks,

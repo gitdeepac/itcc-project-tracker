@@ -3,18 +3,22 @@ version: '3.8'
 services:
   app:
     image: php:8.2-cli
-    working_dir: /var/www/itcc_project_tracker
+    working_dir: /var/www/
     volumes:
-      - ./itcc_project_tracker:/var/www/itcc_project_tracker
+      - ./:/var/www/
     ports:
       - "8000:8000"
     depends_on:
       - db
     command: >
-      sh -c "apt-get update && apt-get install -y libpng-dev libonig-dev libxml2-dev zip unzip curl &&
+      sh -c "apt-get update && 
+             apt-get install -y libpng-dev libonig-dev libxml2-dev zip unzip curl &&
              docker-php-ext-install pdo_mysql mbstring &&
              curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer &&
              composer install --no-interaction &&
+             [ -f .env ] || cp .env.example .env &&
+             php artisan key:generate --force &&
+             php artisan migrate --force &&
              php artisan serve --host=0.0.0.0 --port=8000"
     environment:
       DB_CONNECTION: mysql
@@ -23,7 +27,22 @@ services:
       DB_DATABASE: laravel_app
       DB_USERNAME: root
       DB_PASSWORD: secret
-
+    networks:
+      - app-network
+  frontend:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "5173:5173"
+    depends_on:
+      - app
+    environment:
+      VITE_PROXY_TARGET: http://app:8000  
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    networks:
+      - app-network
   db:
     image: mysql:8.0
     environment:
@@ -33,6 +52,10 @@ services:
       - "3306:3306"
     volumes:
       - dbdata:/var/lib/mysql
-
+    networks:
+      - app-network
 volumes:
   dbdata:
+networks:
+  app-network:
+    driver: bridge  
