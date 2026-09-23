@@ -25,7 +25,7 @@ This repository contains two applications:
 
 ### 1. Clone the repository
 
-git clone https://github.com/gitdeepac/itcc-project-tracker.git
+git clone https://github.com/gitdeepac/itcc-project-tracker.git itcc-project-tracker
 cd itcc-project-tracker
 
 ### 2. Install PHP dependencies
