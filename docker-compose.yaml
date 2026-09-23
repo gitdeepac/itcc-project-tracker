@@ -18,9 +18,11 @@ services:
              composer install --no-interaction &&
              [ -f .env ] || cp .env.example .env &&
              php artisan key:generate --force &&
-             php artisan migrate --force &&
+             php artisan migrate --force --seed &&
              php artisan serve --host=0.0.0.0 --port=8000"
     environment:
+      APP_ENV: local
+      APP_KEY: ""
       DB_CONNECTION: mysql
       DB_HOST: db
       DB_PORT: 3306
