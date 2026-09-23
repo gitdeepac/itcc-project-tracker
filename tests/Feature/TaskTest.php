@@ -9,7 +9,7 @@ use App\Models\Task;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class taskTest extends TestCase
+class TaskTest extends TestCase
 {
     use RefreshDatabase;
 
