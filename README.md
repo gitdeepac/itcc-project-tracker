@@ -57,20 +57,19 @@ php artisan migrate:fresh --seed
 
 php artisan serve
 
-#### After this it will create this username and password
+This will create associated username and password as well as project and tasks.
 
-Admin user: `admin@itcc.test` / `password`
-Projects and associated tasks
-
-Run the backend 
+	Admin user: `admin@itcc.test` / `password`
+	Projects and associated tasks
 
 ### 6. Set up the frontend
 
-```bash
+New terminal 
+
 cd frontend
 npm install
 npm run dev
-```
+
 
 > Note: The Vite proxy is configured to forward /api requests to http://127.0.0.1:8000. 
 > If your backend runs on a different port, update the target in frontend/vite.config.js.
@@ -144,3 +143,7 @@ I confirm that I completed this assessment myself without the use of AI coding a
 - Item 4 – Fresh Clone Setup: Fixed the Laravel and React Vite configurations, removed machine-specific paths, updated the README and Docker configuration, and verified the setup from a fresh installation. - 45 min
 - Update yaml for docker deployment - 40 min
 
+
+### Not completed
+
+- Cpanel deployment.
