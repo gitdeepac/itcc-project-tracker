@@ -106,7 +106,7 @@ npm run dev
 
 Completed in one session on the night of 20–21 September 2026, approximately 9pm to 1:45am AEST.
 
-- | 1 | Project setup, migrations, models, factories, seeders | - 1 h
+- | 1 | Project setup, migrations, models, factories, seeders | - 1.20 h
 - | 2 | Sanctum auth, controllers, routes | 30 min
 - | 3 | Form Requests, API Resources, summary endpoint | - 40 min
 - | 4 | Event + Listener for auto-complete rule | - 30 min
